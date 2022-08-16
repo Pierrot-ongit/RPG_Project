@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7396dca5811b4089ad77824cee6702b6, type: 3}
+  m_Name: Phantom Sprint
+  m_EditorClassIdentifier: 
+  itemID: 8991f8d2-81c0-4c38-926d-88becd5aadc3
+  displayName: Phantom Sprint
+  description: 
+  icon: {fileID: 21300000, guid: a1ec2c0ddc0da634b85f0f465fec2d0d, type: 3}
+  pickup: {fileID: 7072472482751019502, guid: eac6667151e93954391ec9ddb4e4c846, type: 3}
+  stackable: 0
+  price: 100
+  category: 5
+  consumable: 0
+  cooldown: 0
+  manaToUse: 0
+  targetingStrategy: {fileID: 11400000, guid: e55b279335d1f244db25c058c9132632, type: 2}
+  filterStrategies: []
+  effectStrategies:
+  - {fileID: 11400000, guid: 2d80c0a684740cd43a9df84dc710bf88, type: 2}
+  - {fileID: 11400000, guid: 04561da97facc1844a3536fd908bd842, type: 2}

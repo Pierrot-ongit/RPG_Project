@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7396dca5811b4089ad77824cee6702b6, type: 3}
+  m_Name: Small heal potion
+  m_EditorClassIdentifier: 
+  itemID: 076fcc60-c9cd-472c-93fb-3047dfe0fbdb
+  displayName: Small heal potion
+  description: Restore a bit of health
+  icon: {fileID: 21300000, guid: aba0f700d91d4fc4fa8c724899ab04ab, type: 3}
+  pickup: {fileID: 4254760959412171492, guid: 1c4634adc5267f04682522d08c153afa, type: 3}
+  stackable: 1
+  price: 25
+  category: 3
+  consumable: 1
+  targetingStrategy: {fileID: 11400000, guid: e55b279335d1f244db25c058c9132632, type: 2}
+  filterStrategies: []
+  effectStrategies:
+  - {fileID: 11400000, guid: 53e11958ddb7c9d44944c8a9fab29e9f, type: 2}
+  cooldown: 10
+  manaToUse: 0

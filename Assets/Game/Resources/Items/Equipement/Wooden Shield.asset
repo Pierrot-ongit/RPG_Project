@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c236da39dc546a6b6db28b562895166, type: 3}
+  m_Name: Wooden Shield
+  m_EditorClassIdentifier: 
+  itemID: 9435b8c4-572e-4937-a360-f17a95b45823
+  displayName: Wooden shield
+  description: Stop some blows
+  icon: {fileID: 21300000, guid: 886ffb608498aa04c9c0913d5ac3c394, type: 3}
+  pickup: {fileID: 7072472482751019502, guid: eac6667151e93954391ec9ddb4e4c846, type: 3}
+  stackable: 0
+  price: 250
+  category: 1
+  allowedEquipLocation: 6
+  equipCondition:
+    and: []
+  additiveModifiers:
+  - stat: 7
+    value: 3
+  percentageModifiers: []

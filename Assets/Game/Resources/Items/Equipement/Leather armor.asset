@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c236da39dc546a6b6db28b562895166, type: 3}
+  m_Name: Leather armor
+  m_EditorClassIdentifier: 
+  itemID: cb84f882-e3cc-49b8-b50c-3ac14d6f49a4
+  displayName: Leather armor
+  description: Make with scraps but better than nothing.
+  icon: {fileID: 21300000, guid: 7bcee3dac4c974d43b329ee45aef4c99, type: 3}
+  pickup: {fileID: 3765722969275502978, guid: 47869c3870bfd3547884f0350a41bb7d, type: 3}
+  stackable: 0
+  price: 60
+  category: 1
+  allowedEquipLocation: 2
+  equipCondition:
+    and: []
+  additiveModifiers:
+  - stat: 0
+    value: 20
+  - stat: 7
+    value: 3
+  percentageModifiers: []

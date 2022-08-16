@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: feca82a0c34b4651826a3e0b13361fbe, type: 3}
+  m_Name: Remede Joe
+  m_EditorClassIdentifier: 
+  itemID: 593831a7-4b29-437e-81fb-0f622b1b1b6b
+  displayName: Miracle Remedy
+  description: Heal anything (convenient right ?)
+  icon: {fileID: 21300000, guid: f1dd815974b2d4240a6bc912d6585497, type: 3}
+  pickup: {fileID: 4254760959412171492, guid: 1c4634adc5267f04682522d08c153afa, type: 3}
+  stackable: 0
+  price: 1
+  category: 4
+  quest: {fileID: 11400000, guid: 07559a74ff568d146a8773eeab99412f, type: 2}

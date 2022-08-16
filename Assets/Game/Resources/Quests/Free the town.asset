@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f1b8eba6df3b4dc08336bfe973cf61b3, type: 3}
+  m_Name: Free the town
+  m_EditorClassIdentifier: 
+  objectives:
+  - reference: kill-merc
+    description: Kill the mercenaries
+    quantity: 8
+    usesCondition: 0
+    completionCondition:
+      and: []
+  - reference: kill-chief
+    description: Kill the mercenaries chief
+    quantity: 1
+    usesCondition: 0
+    completionCondition:
+      and: []
+  rewards:
+  - number: 1
+    item: {fileID: 11400000, guid: 1c34e5df6f32c06418b30328dd2cb528, type: 2}
+  experienceReward: 200
+  moneyReward: 100

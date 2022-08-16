@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f1b8eba6df3b4dc08336bfe973cf61b3, type: 3}
+  m_Name: Find the remedy for Joe
+  m_EditorClassIdentifier: 
+  objectives:
+  - reference: find_remedy
+    description: Find the remedy. The guards must have been in something well guarded.
+    quantity: 1
+    usesCondition: 0
+    completionCondition:
+      and: []
+  - reference: give_remedy
+    description: Give the remedy back to Laura
+    quantity: 1
+    usesCondition: 0
+    completionCondition:
+      and: []
+  rewards:
+  - number: 1
+    item: {fileID: 11400000, guid: 694884f635b4fea4ebba9c041d7b6285, type: 2}
+  experienceReward: 100
+  moneyReward: 100

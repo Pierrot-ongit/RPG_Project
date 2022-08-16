@@ -1,0 +1,200 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-6399635921362174445
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67225e27a69347c884a3842e6a5ebbb7, type: 3}
+  m_Name: e367a776-6949-4a3f-9ffd-9690a9d2af04
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  isPlayerChoice: 1
+  text: I have the remedy
+  children:
+  - e086b1ee-59ee-4e64-85b1-dfca6c0ba7f6
+  rect:
+    serializedVersion: 2
+    x: 284
+    y: 220
+    width: 200
+    height: 200
+  onEnterAction: 
+  onExitAction: 
+  conditions:
+  - and:
+    - or:
+      - predicate: HasInventoryItem
+        parameters:
+        - 593831a7-4b29-437e-81fb-0f622b1b1b6b
+        negate: 0
+--- !u!114 &-3390280727763231008
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67225e27a69347c884a3842e6a5ebbb7, type: 3}
+  m_Name: 7476227f-fa7c-4ee5-8aba-0ae90bd587ba
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  isPlayerChoice: 1
+  text: That's right. I am just arrived here. It looks lovely.
+  children:
+  - 93780822-1f89-4e6e-b4c8-8b108af5ef60
+  rect:
+    serializedVersion: 2
+    x: 260
+    y: 10
+    width: 200
+    height: 200
+  onEnterAction: 
+  onExitAction: 
+  conditions:
+  - and:
+    - or:
+      - predicate: HasInventoryItem
+        parameters:
+        - 593831a7-4b29-437e-81fb-0f622b1b1b6b
+        negate: 1
+--- !u!114 &-1347408288000399136
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67225e27a69347c884a3842e6a5ebbb7, type: 3}
+  m_Name: e086b1ee-59ee-4e64-85b1-dfca6c0ba7f6
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  isPlayerChoice: 0
+  text: 'Thank you so much !
+
+    Go check on him, he will probably has some new
+    items for you.'
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 535
+    y: 220
+    width: 200
+    height: 200
+  onEnterAction: 
+  onExitAction: CompleteJoeQuest
+  conditions: []
+--- !u!114 &-889536635859942655
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67225e27a69347c884a3842e6a5ebbb7, type: 3}
+  m_Name: bf43e7e0-22c9-4643-8625-86ee8aea6f8a
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  isPlayerChoice: 0
+  text: Hello. You are not from around here right ?
+  children:
+  - 7476227f-fa7c-4ee5-8aba-0ae90bd587ba
+  - e367a776-6949-4a3f-9ffd-9690a9d2af04
+  rect:
+    serializedVersion: 2
+    x: 10
+    y: 10
+    width: 200
+    height: 200
+  onEnterAction: 
+  onExitAction: 
+  conditions: []
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1dd06a1f025ff84e86b7c3d7680e532, type: 3}
+  m_Name: Remedy for joe
+  m_EditorClassIdentifier: 
+  nodes:
+  - {fileID: -889536635859942655}
+  - {fileID: -3390280727763231008}
+  - {fileID: 2552791750033405835}
+  - {fileID: 344990315204342105}
+  - {fileID: -6399635921362174445}
+  - {fileID: -1347408288000399136}
+  newNodeOffset: {x: 250, y: 0}
+  condition:
+    and:
+    - or:
+      - predicate: CompletedQuest
+        parameters:
+        - Find the remedy for Joe
+        negate: 1
+--- !u!114 &344990315204342105
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67225e27a69347c884a3842e6a5ebbb7, type: 3}
+  m_Name: b702e8cd-b727-4dfb-a79b-ef55a4ae7a52
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  isPlayerChoice: 1
+  text: Hum. Maybe I can do something about it.
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 760
+    y: 10
+    width: 200
+    height: 200
+  onEnterAction: 
+  onExitAction: GiveQuest
+  conditions: []
+--- !u!114 &2552791750033405835
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67225e27a69347c884a3842e6a5ebbb7, type: 3}
+  m_Name: 93780822-1f89-4e6e-b4c8-8b108af5ef60
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  isPlayerChoice: 0
+  text: Well not really. We have a band of mercernaries that take control of the
+    village. They even took the medecine for this old Joe, our blacksmith.
+  children:
+  - b702e8cd-b727-4dfb-a79b-ef55a4ae7a52
+  rect:
+    serializedVersion: 2
+    x: 510
+    y: 10
+    width: 200
+    height: 200
+  onEnterAction: 
+  onExitAction: 
+  conditions: []
