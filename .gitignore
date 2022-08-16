@@ -77,4 +77,4 @@ crashlytics-build.properties
 /[Aa]ssets/[Ss]treamingAssets/aa/*
 
 /[Aa]ssets/Asset Packs/*
-/Assets/RiderFlow.UserData
+/Assets/RiderFlow.UserData/*
