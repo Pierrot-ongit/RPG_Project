@@ -28,8 +28,9 @@ MonoBehaviour:
   conditions:
   - and:
     - or:
-      - predicate: HasInventoryItem
+      - predicate: 6
         parameters:
+        - 593831a7-4b29-437e-81fb-0f622b1b1b6b
         - 593831a7-4b29-437e-81fb-0f622b1b1b6b
         negate: 0
 --- !u!114 &-3390280727763231008
@@ -60,8 +61,9 @@ MonoBehaviour:
   conditions:
   - and:
     - or:
-      - predicate: HasInventoryItem
+      - predicate: 6
         parameters:
+        - 593831a7-4b29-437e-81fb-0f622b1b1b6b
         - 593831a7-4b29-437e-81fb-0f622b1b1b6b
         negate: 1
 --- !u!114 &-1347408288000399136
@@ -140,12 +142,7 @@ MonoBehaviour:
   - {fileID: -1347408288000399136}
   newNodeOffset: {x: 250, y: 0}
   condition:
-    and:
-    - or:
-      - predicate: CompletedQuest
-        parameters:
-        - Find the remedy for Joe
-        negate: 1
+    and: []
 --- !u!114 &344990315204342105
 MonoBehaviour:
   m_ObjectHideFlags: 0

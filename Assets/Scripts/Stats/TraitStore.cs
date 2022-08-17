@@ -145,10 +145,10 @@ namespace RPG.Stats
             }
         }
 
-        public bool? Evaluate(string predicate, string[] parameters)
+        public bool? Evaluate(EPredicate predicate, string[] parameters)
         {
             
-            if (predicate == "MinimumTrait")
+            if (predicate == EPredicate.MinimumTrait)
             {
                 if (Enum.TryParse<Trait>(parameters[0], out Trait trait))
                 {

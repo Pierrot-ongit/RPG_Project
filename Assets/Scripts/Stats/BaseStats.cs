@@ -5,7 +5,7 @@ using GameDevTV.Utils;
 
 namespace RPG.Stats
 {
-    public class BaseStats : MonoBehaviour
+    public class BaseStats : MonoBehaviour, IStringPredicateEvaluator
     {
         [Range(1, 99)]
         [SerializeField] int startingLevel = 1;
@@ -122,6 +122,18 @@ namespace RPG.Stats
             int level = CalculateLevel();
             float XPToLevelUp = progression.GetStat(Stat.ExperienceToLevelUp, characterClass, level);
             return currentXP / XPToLevelUp;
+        }
+        
+        public bool? Evaluate(EPredicate predicate, string[] parameters)
+        {
+            if (predicate == EPredicate.HasLevel)
+            {
+                if (int.TryParse(parameters[0], out int testLevel))
+                {
+                    return currentLevel.value >= testLevel;
+                } 
+            }
+            return null;
         }
     }
 }

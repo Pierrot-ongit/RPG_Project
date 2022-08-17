@@ -73,9 +73,10 @@ MonoBehaviour:
   condition:
     and:
     - or:
-      - predicate: CompletedQuest
+      - predicate: 3
         parameters:
         - Find the remedy for Joe
+        - 
         negate: 0
 --- !u!114 &1816113238273620439
 MonoBehaviour:

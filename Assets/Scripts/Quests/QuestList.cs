@@ -173,13 +173,13 @@ namespace RPG.Quests
             return null;
         }
         
-        public bool? Evaluate(string predicate, string[] parameters)
+        public bool? Evaluate(EPredicate predicate, string[] parameters)
         {
             switch (predicate)
             {
-                case "HasQuest":
+                case EPredicate.HasQuest:
                     return HasQuest(Quest.GetByName(parameters[0]));
-                case "CompletedQuest":
+                case EPredicate.CompletedQuest:
                     Quest questToTest = Quest.GetByName(parameters[0]);
                     // Quest did not exist.
                     if (questToTest == null) return null;
@@ -187,6 +187,10 @@ namespace RPG.Quests
                     // The quest exist but we don't have it yet. So we don't have finished yet.
                     if (status == null) return false;
                     return status.IsComplete();
+                case EPredicate.CompletedObjective:
+                    QuestStatus teststatus = GetQuestStatus(Quest.GetByName(parameters[0]));
+                    if (teststatus==null) return false;
+                    return teststatus.IsObjectiveComplete(parameters[1]);
             }
             return null;
         }

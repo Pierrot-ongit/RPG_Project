@@ -58,7 +58,7 @@ MonoBehaviour:
   conditions:
   - and:
     - or:
-      - predicate: HasQuest
+      - predicate: 0
         parameters:
         - Dance with the deads
         negate: 1
@@ -90,8 +90,9 @@ MonoBehaviour:
   conditions:
   - and:
     - or:
-      - predicate: HasItemEquiped
+      - predicate: 8
         parameters:
+        - 5c4a3a95-c4a2-4897-9f3b-ca3e3d633767
         - 5c4a3a95-c4a2-4897-9f3b-ca3e3d633767
         negate: 0
 --- !u!114 &11400000
@@ -112,6 +113,8 @@ MonoBehaviour:
   - {fileID: 2353244815842860126}
   - {fileID: -5855557082194837546}
   newNodeOffset: {x: 250, y: 0}
+  condition:
+    and: []
 --- !u!114 &2353244815842860126
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -142,7 +145,8 @@ MonoBehaviour:
   conditions:
   - and:
     - or:
-      - predicate: HasItemEquiped
+      - predicate: 8
         parameters:
+        - 5c4a3a95-c4a2-4897-9f3b-ca3e3d633767
         - 5c4a3a95-c4a2-4897-9f3b-ca3e3d633767
         negate: 1
