@@ -14,13 +14,88 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemID: ceecce65-d4b4-46ac-a5c8-38261eda0733
   displayName: Staff of fire
-  description: Stats ?
+  description: 
   icon: {fileID: 21300000, guid: 1398631344da86f4f825e5bee7af3b46, type: 3}
   pickup: {fileID: 7547593153979978713, guid: 8cb4ede7a4379214eb8955077199c21b, type: 3}
   stackable: 0
   price: 200
   category: 2
+  foldoutStyle:
+    m_Name: Foldout
+    m_Normal:
+      m_Background: {fileID: 0}
+      m_ScaledBackgrounds:
+      - {fileID: -6801349707174745596, guid: 0000000000000000d000000000000000, type: 0}
+      m_TextColor: {r: 0.8235294, g: 0.8235294, b: 0.8235294, a: 1}
+    m_Hover:
+      m_Background: {fileID: 0}
+      m_ScaledBackgrounds: []
+      m_TextColor: {r: 0.8235294, g: 0.8235294, b: 0.8235294, a: 1}
+    m_Active:
+      m_Background: {fileID: 0}
+      m_ScaledBackgrounds:
+      - {fileID: -1674602421990392834, guid: 0000000000000000d000000000000000, type: 0}
+      m_TextColor: {r: 0.29803923, g: 0.49411765, b: 1, a: 1}
+    m_Focused:
+      m_Background: {fileID: 0}
+      m_ScaledBackgrounds:
+      - {fileID: 3684442412078439994, guid: 0000000000000000d000000000000000, type: 0}
+      m_TextColor: {r: 0.8235294, g: 0.8235294, b: 0.8235294, a: 1}
+    m_OnNormal:
+      m_Background: {fileID: 0}
+      m_ScaledBackgrounds:
+      - {fileID: 8938427661926886800, guid: 0000000000000000d000000000000000, type: 0}
+      m_TextColor: {r: 0.8235294, g: 0.8235294, b: 0.8235294, a: 1}
+    m_OnHover:
+      m_Background: {fileID: 0}
+      m_ScaledBackgrounds: []
+      m_TextColor: {r: 0.8235294, g: 0.8235294, b: 0.8235294, a: 1}
+    m_OnActive:
+      m_Background: {fileID: 0}
+      m_ScaledBackgrounds:
+      - {fileID: -8680445939362908933, guid: 0000000000000000d000000000000000, type: 0}
+      m_TextColor: {r: 0.29803923, g: 0.49411765, b: 1, a: 1}
+    m_OnFocused:
+      m_Background: {fileID: 0}
+      m_ScaledBackgrounds:
+      - {fileID: 6561537487811827939, guid: 0000000000000000d000000000000000, type: 0}
+      m_TextColor: {r: 0.8235294, g: 0.8235294, b: 0.8235294, a: 1}
+    m_Border:
+      m_Left: 14
+      m_Right: 0
+      m_Top: 13
+      m_Bottom: 0
+    m_Margin:
+      m_Left: 0
+      m_Right: 4
+      m_Top: 0
+      m_Bottom: 0
+    m_Padding:
+      m_Left: 14
+      m_Right: 0
+      m_Top: 0
+      m_Bottom: 0
+    m_Overflow:
+      m_Left: 0
+      m_Right: 0
+      m_Top: -2
+      m_Bottom: 0
+    m_Font: {fileID: 0}
+    m_FontSize: 12
+    m_FontStyle: 1
+    m_Alignment: 3
+    m_WordWrap: 0
+    m_RichText: 0
+    m_TextClipping: 0
+    m_ImagePosition: 0
+    m_ContentOffset: {x: 0, y: 0}
+    m_FixedWidth: 0
+    m_FixedHeight: 0
+    m_StretchWidth: 1
+    m_StretchHeight: 0
   allowedEquipLocation: 5
+  equipCondition:
+    and: []
   animatorOverride: {fileID: 22100000, guid: 36aa47777431cb8428465e052076500c, type: 2}
   equippedPrefab: {fileID: -2593333333842698292, guid: b572236932c2b3a49a2fd1b84e270972, type: 3}
   weaponDamage: 25

@@ -23,7 +23,7 @@ namespace RPG.Abilities.Effects
         [SerializeField] private float shaderVarRate = 0.1f;
         [SerializeField] private float shaderVarRefreshRate = 0.05f;
     
-        private bool isTrailActive = false;
+        //private bool isTrailActive = false;
         private Dictionary<int, SkinnedMeshRenderer[]> _skinnedMeshRenderers = new Dictionary<int, SkinnedMeshRenderer[]>();
         public override void StartEffect(AbilityData data, Action finished)
         {
