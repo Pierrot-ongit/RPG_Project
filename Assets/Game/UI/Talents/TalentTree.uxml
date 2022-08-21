@@ -1,0 +1,10 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/Game/UI/Talents/TalentTree.uss?fileID=7433441132597879392&amp;guid=64f61ad4697370146a1c7609ad81ebf5&amp;type=3#TalentTree" />
+    <ui:VisualElement name="TalentTreeContainer" style="background-image: url(&apos;project://database/Assets/Asset%20Packs/Fantasy%20RPG%20UI%20Sample/UI/Parts/Background_06.png?fileID=2800000&amp;guid=ff128f70cb401434da05bb746522f40d&amp;type=3#Background_06&apos;); width: 100%; height: 100%; max-width: none; padding-left: 8%; padding-right: 8%; padding-top: 8%; padding-bottom: 8%; flex-basis: initial;">
+        <ui:VisualElement style="background-image: url(&apos;project://database/Assets/Asset%20Packs/Fantasy%20RPG%20UI%20Sample/UI/Parts/bag_t.png?fileID=2800000&amp;guid=905fa0d7ce2e5a444b37c0ce8f7c93da&amp;type=3#bag_t&apos;); width: auto; height: auto; min-width: 50px; min-height: 50px; max-width: 150px; max-height: 150px;" />
+        <ui:VisualElement style="background-image: url(&apos;project://database/Assets/Asset%20Packs/Fantasy%20RPG%20UI%20Sample/UI/Parts/bag_t.png?fileID=2800000&amp;guid=905fa0d7ce2e5a444b37c0ce8f7c93da&amp;type=3#bag_t&apos;); width: auto; height: auto; min-width: 50px; min-height: 50px; max-width: 150px; max-height: 150px;" />
+        <ui:VisualElement name="Skill2" class="skill" style="top: 234px; left: 326px; background-image: url(&apos;project://database/Assets/Asset%20Packs/Universal%20Gold%20Icons%20Sample/Potion_01(Purple)_No%20BG.png?fileID=2800000&amp;guid=f1dd815974b2d4240a6bc912d6585497&amp;type=3#Potion_01(Purple)_No BG&apos;);" />
+        <ui:VisualElement name="Arrow" focusable="true" class="arrow" style="position: absolute; top: 328px; left: 310px;" />
+        <ui:VisualElement name="Skill1" class="skill" style="top: 244px; left: 159px;" />
+    </ui:VisualElement>
+</ui:UXML>
