@@ -11,7 +11,7 @@ namespace GridInventoryTutorial
             highlighter.gameObject.SetActive(b);
         }
         
-        public void SetParent(InventoryGridUI targetGrid)
+        public void SetParent(InventoryGrid targetGrid)
         {
             if (targetGrid == null) { return; }
             highlighter.SetParent(targetGrid.GetComponent<RectTransform>());
@@ -20,19 +20,19 @@ namespace GridInventoryTutorial
         public void SetSize(InventoryGridItem targetItem)
         {
             Vector2 size = new Vector2();
-            size.x = targetItem.data.width * InventoryGridUI.tileSizeWidth;
-            size.y = targetItem.data.height * InventoryGridUI.tileSizeHeight;
+            size.x = targetItem.data.width * InventoryGrid.tileSizeWidth;
+            size.y = targetItem.data.height * InventoryGrid.tileSizeHeight;
             highlighter.sizeDelta = size;
         }
 
-        public void SetPosition(InventoryGridUI targetGrid, InventoryGridItem targetItem)
+        public void SetPosition(InventoryGrid targetGrid, InventoryGridItem targetItem)
         {
             Vector2 pos = targetGrid.CalculatePositionOnGrid(targetItem, targetItem.onGridPositionX, targetItem.onGridPositionY);
             highlighter.localPosition = pos;
         }
 
 
-        public void SetPosition(InventoryGridUI targetGrid, InventoryGridItem targetItem, int posX, int posY)
+        public void SetPosition(InventoryGrid targetGrid, InventoryGridItem targetItem, int posX, int posY)
         {
             Vector2 pos = targetGrid.CalculatePositionOnGrid(targetItem, posX, posY);
             highlighter.localPosition = pos;

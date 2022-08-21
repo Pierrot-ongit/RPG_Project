@@ -18,8 +18,8 @@ namespace GridInventoryTutorial
             data = itemData;
             GetComponent<Image>().sprite = itemData.itemIcon;
             Vector2 size = new Vector2();
-            size.x = itemData.width * InventoryGridUI.tileSizeWidth;
-            size.y = itemData.height * InventoryGridUI.tileSizeHeight;
+            size.x = itemData.width * InventoryGrid.tileSizeWidth;
+            size.y = itemData.height * InventoryGrid.tileSizeHeight;
             GetComponent<RectTransform>().sizeDelta = size;
 
         }

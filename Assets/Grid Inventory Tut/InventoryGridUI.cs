@@ -13,7 +13,7 @@ namespace GridInventoryTutorial
     /// To be placed on the root of the inventory UI. Handles spawning all the
     /// inventory slot prefabs.
     /// </summary>
-    public class InventoryGridUI : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
+    public class InventoryGrid : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
     {
         // CONFIG DATA
         [SerializeField] private RectTransform gridRectTransform;

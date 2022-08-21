@@ -32,6 +32,9 @@ namespace GameDevTV.Inventories
         [SerializeField] bool stackable = false;
         [SerializeField] private float price = 100f;
         [SerializeField] private ItemCategory category = ItemCategory.None;
+        [SerializeField] private int width = 1;
+        [SerializeField] private int height = 1;
+        
 
         [NonSerialized] protected GUIStyle contentStyle;
 
@@ -128,6 +131,15 @@ namespace GameDevTV.Inventories
         public Pickup GetPickup()
         {
             return pickup;
+        }
+
+        public int GetWidth()
+        {
+            return width;
+        }
+        public int GetHeight()
+        {
+            return height;
         }
 
         // PRIVATE

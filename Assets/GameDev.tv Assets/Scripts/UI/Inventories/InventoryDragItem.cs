@@ -13,9 +13,25 @@ namespace GameDevTV.UI.Inventories
     /// </summary>
     public class InventoryDragItem : DragItem<InventoryItem>, IPointerClickHandler
     {
+        [Tooltip("The starter point X of the object")]
+        public int onGridPositionX;
+        [Tooltip("The starter point Y of the object")]
+        public int onGridPositionY;
+        
+        // DONE
+        // Donner une taille correspondant à celle des données => InventoryGridItem.Setup
+        // Donner les starters points x and y.
+        // TODO
+        // Changer Inventory pour partir sur une grille.
+        // Changer les slots pour permettre qu'un meme item occupe plusieurs slots.
+          // InventoryGridUI InventoryGridItem[,] slots;
+        // Fixer Inventory get FindSlot . S'inspirer de InventoryGridUI FindSpaceForObject
+        // Highligh;
+        // Item tooltip spawner a mettre sur l'item et non sur le grid slot.
         
         public void OnPointerClick(PointerEventData eventData)
         {
+
             // Double click ! We wil try to swap between the equipement and inventory.
             if(eventData.clickCount > 1)
             {

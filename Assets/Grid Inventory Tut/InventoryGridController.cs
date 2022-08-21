@@ -8,8 +8,8 @@ namespace GridInventoryTutorial
 {
     public class InventoryGridController : MonoBehaviour
     {
-        private InventoryGridUI _selectedGridInventory;
-        public InventoryGridUI SelectedGridInventory
+        private InventoryGrid _selectedGridInventory;
+        public InventoryGrid SelectedGridInventory
         {
             get => _selectedGridInventory;
             set
@@ -108,11 +108,11 @@ namespace GridInventoryTutorial
             }
         }
 
+        // Visualize Item Drag.
         private void ItemIconDrag()
         {
             if (selectedItem != null)
             {
-                // Visualize Item Drag.
                 _rectTransform.position = Input.mousePosition;
             }
         }
@@ -161,8 +161,8 @@ namespace GridInventoryTutorial
             // We need to take into account the size of items to give an offset on the mouse position.
             if (selectedItem != null)
             {
-                position.x -= (selectedItem.data.width - 1) * InventoryGridUI.tileSizeWidth / 2;
-                position.y += (selectedItem.data.height - 1) * InventoryGridUI.tileSizeHeight / 2;
+                position.x -= (selectedItem.data.width - 1) * InventoryGrid.tileSizeWidth / 2;
+                position.y += (selectedItem.data.height - 1) * InventoryGrid.tileSizeHeight / 2;
             }
 
             Vector2Int tilePosition = SelectedGridInventory.GetTileGridPosition(position);
