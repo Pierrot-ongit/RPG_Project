@@ -104,6 +104,10 @@ PrefabInstance:
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6809848706412407623, guid: ddc48cdbfa6bd5346901bfdffff4478b, type: 3}
+      propertyPath: progression
+      value: 
+      objectReference: {fileID: 11400000, guid: a4e2efdf2ac14ea40842815c3cba2934, type: 2}
+    - target: {fileID: 6809848706412407623, guid: ddc48cdbfa6bd5346901bfdffff4478b, type: 3}
       propertyPath: startingLevel
       value: 4
       objectReference: {fileID: 0}

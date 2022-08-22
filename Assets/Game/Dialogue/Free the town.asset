@@ -73,10 +73,10 @@ MonoBehaviour:
   condition:
     and:
     - or:
-      - predicate: 3
+      - predicate: 6
         parameters:
-        - Find the remedy for Joe
-        - 
+        - 5c4a3a95-c4a2-4897-9f3b-ca3e3d633767
+        - find_remedy
         negate: 0
 --- !u!114 &1816113238273620439
 MonoBehaviour:

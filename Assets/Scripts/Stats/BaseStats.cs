@@ -9,13 +9,11 @@ namespace RPG.Stats
     {
         [Range(1, 99)]
         [SerializeField] int startingLevel = 1;
-        [SerializeField] CharacterClass characterClass;
-        [SerializeField] Progression progression = null;
+        [SerializeField] ProgressionCharacterClass progression = null;
         [SerializeField]bool shouldUseModifiers = false;
 
         public event Action onLevelUp;
 
-        //int currentLevel = 0;
         LazyValue<int> currentLevel;
         Experience experience;
 
@@ -52,7 +50,7 @@ namespace RPG.Stats
             if (newLevel > currentLevel.value)
             {
                 currentLevel.value = newLevel;
-                onLevelUp();
+                onLevelUp?.Invoke();
             }
         }
 
@@ -73,7 +71,7 @@ namespace RPG.Stats
 
         private float GetBaseStat(Stat stat)
         {
-            return progression.GetStat(stat, characterClass, GetLevel());
+            return progression.GetStat(stat, GetLevel());
         }
 
         private (float, float) GetModifiers(Stat stat)
@@ -103,10 +101,10 @@ namespace RPG.Stats
             if (experience == null) return startingLevel;
 
             float currentXP = experience.GetPoints();
-            int penultimateLevel = progression.GetLevels(Stat.ExperienceToLevelUp, characterClass);
+            int penultimateLevel = progression.GetLevels(Stat.ExperienceToLevelUp);
             for (int level = 1; level <= penultimateLevel; level++)
             {
-                float XPToLevelUp = progression.GetStat(Stat.ExperienceToLevelUp, characterClass, level);
+                float XPToLevelUp = progression.GetStat(Stat.ExperienceToLevelUp, level);
                 if (XPToLevelUp > currentXP)
                 {
                     return level;
@@ -120,7 +118,7 @@ namespace RPG.Stats
         {
             float currentXP = experience.GetPoints();
             int level = CalculateLevel();
-            float XPToLevelUp = progression.GetStat(Stat.ExperienceToLevelUp, characterClass, level);
+            float XPToLevelUp = progression.GetStat(Stat.ExperienceToLevelUp, level);
             return currentXP / XPToLevelUp;
         }
         

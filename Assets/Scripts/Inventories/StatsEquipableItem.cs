@@ -58,7 +58,7 @@ namespace RPG.Inventories
         string FormatAttribute(Modifier mod, bool percent)
         {
             if ((int)mod.value == 0.0f) return "";
-            string percentString = percent ? "percent" : "point";
+            string percentString = percent ? "percent" : "points";
             string bonus = mod.value > 0.0f ? "<color=#8888ff>bonus</color>" : "<color=#ff8888>penalty</color>";
             return $"{Mathf.Abs((int) mod.value)} {percentString} {bonus} to {mod.stat}\n";
         }
